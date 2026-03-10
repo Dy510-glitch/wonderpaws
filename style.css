@@ -25,6 +25,29 @@ body {
     z-index: 1000;
 }
 
+/* Styling the Text Logo */
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #0f172a; /* Navy Blue from your logo */
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.logo-text span {
+    color: #ff3d3d; /* Bright Red from your paw print */
+}
+
+/* Ensure the navbar items stay centered vertically */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
