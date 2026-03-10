@@ -166,3 +166,36 @@ footer {
     background: #2c3e50;
     color: white;
 }
+
+/* --- Tablet & Mobile Adjustments --- */
+
+@media (max-width: 768px) {
+    /* Stack the navigation links vertically on small screens */
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        gap: 15px; /* Adds space between Home, Shop, and Our Story */
+    }
+
+    /* Adjust the Hero height for mobile so it doesn't look too thin */
+    .hero {
+        height: 60vh; /* Gives more vertical room for the logo on phones */
+        background-size: contain; 
+        padding-bottom: 30px;
+    }
+
+    /* Make the shop cards stack in 1 column instead of a grid */
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    /* Make the text logo a bit smaller for phone screens */
+    .logo-text {
+        font-size: 1.5rem;
+    }
+}
