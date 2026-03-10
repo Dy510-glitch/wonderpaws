@@ -27,15 +27,23 @@ body {
 
 /* Styling the Text Logo */
 .logo-text {
-    font-size: 1.8rem;
+    /* Sets the height/size of the text */
+    font-size: 36px; 
+    
+    /* Adjusts the spacing to keep it sleek */
+    line-height: 12px; 
+    
     font-weight: 800;
-    color: #0f172a; /* Navy Blue from your logo */
-    letter-spacing: -1px;
+    color: #0f172a; 
     text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
 }
 
 .logo-text span {
-    color: #ff3d3d; /* Bright Red from your paw print */
+    color: #ff3d3d;
+    margin-left: 2px; /* Slight gap between Wonder and Paws */
 }
 
 /* Ensure the navbar items stay centered vertically */
