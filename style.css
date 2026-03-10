@@ -46,15 +46,37 @@ body {
     font-weight: 500;
 }
 
-/* Update the Hero Section */
+/*Updated Hero*/
 .hero {
-    height: 80vh; /* Increased height to show off the logo */
-    background: #0f172a url('Cover (2).jpg') no-repeat center center;
-    background-size: contain; /* This ensures the whole logo is visible */
+    height: 90vh; /* Takes up most of the screen */
+    background-color: #0f172a; /* Matches the navy blue in your logo */
+    background-image: url('WonderPawsBlueLogo.jpg');
+    background-size: contain; /* Ensures the full logo is visible without cropping */
+    background-position: center; /* Centers the logo in the blue space */
+    background-repeat: no-repeat;
     display: flex;
-    align-items: flex-end; /* Moves the button to the bottom of the logo */
+    align-items: flex-end; /* Places the button at the bottom */
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
+}
+
+/* Professional Button Style to match the Red in your logo */
+.btn-hero {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #ff3d3d; /* Matches the paw print red */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-hero:hover {
+    transform: scale(1.05);
+    background-color: #e63535;
 }
 
 /* Adjust Navbar Logo */
