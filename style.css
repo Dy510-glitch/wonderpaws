@@ -77,19 +77,23 @@ body {
 
 /*Updated Hero*/
 .hero {
-    height: 100vh; /* This makes the hero section fill the entire screen height */
-    background-color: #0f172a; /* Matches the exact navy blue in your logo */
+    /* This creates the 16:9 aspect ratio feel */
+    width: 100%;
+    height: 56.25vw; /* This is the mathematical 16:9 ratio (9/16 = 0.5625) */
+    max-height: 500px; /* Limits the height so it doesn't get too big on large monitors */
+    
+    background-color: #0f172a;
     background-image: url('WonderPawsBlueLogo.jpg');
     
-    /* THE KEY FIXES: */
-    background-size: cover;    /* This will make the image grow to fill the entire space */
-    background-position: center; /* Keeps the paw print perfectly in the middle */
+    /* Adjusted background settings */
+    background-size: contain;    /* Ensures the logo doesn't get cut off */
+    background-position: center; 
     background-repeat: no-repeat;
     
     display: flex;
     align-items: flex-end; 
     justify-content: center;
-    padding-bottom: 80px; /* Adjusts how high the button sits over the logo */
+    padding-bottom: 40px; /* Moves the button slightly up */
 }
 
 /* Professional Button Style to match the Red in your logo */
