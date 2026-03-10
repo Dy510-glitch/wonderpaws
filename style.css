@@ -46,18 +46,25 @@ body {
     font-weight: 500;
 }
 
-/* Hero Section */
+/* Update the Hero Section */
 .hero {
-    height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                url('https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1200&q=80');
-    background-size: cover;
-    background-position: center;
+    height: 80vh; /* Increased height to show off the logo */
+    background: #0f172a url('Cover (2).jpg') no-repeat center center;
+    background-size: contain; /* This ensures the whole logo is visible */
     display: flex;
-    align-items: center;
+    align-items: flex-end; /* Moves the button to the bottom of the logo */
     justify-content: center;
-    text-align: center;
-    color: white;
+    padding-bottom: 50px;
+}
+
+/* Adjust Navbar Logo */
+.logo img {
+    display: block;
+    width: auto;
+}
+
+.navbar {
+    padding: 0.5rem 5%; /* Slimmer navbar to accommodate the logo height */
 }
 
 .hero h1 span { color: #ff7e5f; }
