@@ -50,10 +50,8 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
-    background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    align-items: baseline; /* This keeps the bottom of the text level across the bar */
+    padding: 15px 5%;
 }
 
 .logo {
